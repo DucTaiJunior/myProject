@@ -1,0 +1,814 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #f4f4f4; */
+    background-color: #f2f4f7;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #f4f4f4;
+}
+
+.slideEncase {
+    min-width: 120rem;
+    width: 100%;
+    height: 4rem;
+    background-color: #dbf9eb;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+.header__nav {
+    padding-top: 1.4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #f4f4f4;
+}
+
+.header__slideChild {
+    padding: 0 1.2rem;
+    list-style-type: none;
+}
+
+.header__slideText {
+    padding: 0 1.2rem;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+    color: #009981;
+}
+
+.header__slideText .fa-solid {
+    margin-right: 1rem; 
+}
+
+.nav {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__target {
+    list-style-type: none;
+    color: #009981;
+    line-height: 4.2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.header__target >a {
+    padding: 0 1.2rem;
+    font-weight: 600;
+    color: #009981;
+    text-decoration: none;
+}
+
+.header__target:hover {
+    cursor: pointer;
+    background-color: #effff7;
+    border-radius: 0.8rem;
+}
+
+/* .header__logoShopEncase {
+    margin: 0 2.525rem;
+    display: block;
+    transition: transform 0.6s ease;
+    display: inline-block;
+}
+
+.header__logoShopEncase:hover .header__logoShop {
+    opacity: 0.8;
+    transform: scale(1.1);
+} */
+
+.header__logoShopEncase {
+    margin: 0 2.525rem;
+    display: inline-block;
+}
+
+.header__logoShop {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__logoShopEncase:hover .header__logoShop {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.header__logoShop {
+    display: block;
+    height: 4.2rem;
+}
+
+
+.header__searchBox {
+    border: 0.01rem solid #ddd;
+    border-radius: 3rem;
+    width: 60.2rem;
+    display: flex;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+
+.header__searchInput {
+    padding: 0 1.5rem;
+    border: none;
+    outline: none;
+    width: 49.8rem;
+    /* border-right: 0.1rem solid #ddd; */
+    font-size: 1.4rem;
+
+}
+
+.header__searchBox__lineSpace {
+    width: 0.5px;
+    height: 70%;
+    background-color: #ddd; 
+    margin: auto;
+}
+
+.header__searchInput::placeholder {
+    opacity: 0.6;
+    font-size: 1.3rem;
+}
+
+.header__searchBtn {
+    border: 0;
+    width: 10.4rem;
+    background-color: var(--white-color);
+    color: #009981;
+    font-size: 1.4rem;
+}
+
+.header__searchBtn:hover {
+    cursor: pointer;
+    background-color: #dcf9eb;
+}
+
+.searchKey {
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    max-width: 120rem;
+    display: flex;
+}
+
+.header__key {
+    list-style-type: none;
+}
+
+.header__textKey {
+    margin-left: 1.8rem;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.header__textKey:hover {
+    color: #006555;
+}
+
+.header__textTargetKey {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #009981;
+    font-weight: 600;
+    margin-left: 24.3rem;
+}
+
+
+#defaultInterface {
+    /* display: none; */
+}
+#detailsInterface {
+    display: none;
+}
+
+
+/* ----------Content---------- */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 0;
+}
+
+.catalog {
+    position: sticky;
+    top: 13.8rem;
+    max-width: 23rem;
+    height: 64.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-1 {
+    padding: 1.2rem 0;
+    border-radius: 0.8rem;
+    width: 23rem;
+    background-color: var(--white-color);
+}
+
+.catalog-1__encase {
+    padding: 0 2rem 1.2rem;
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.catalog-1__encaseItem {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-1__item {
+    padding: 0.2rem 1.2rem;
+    width: 20.6rem;
+    display: flex;
+    align-items: center;
+    color: #27272A;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.catalog-1__item:hover {
+    border-radius: 0.8rem;
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.catalog-1__item img {
+    width: 2.4rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.catalog-2 {
+    padding: 1.2rem 0;
+    border-radius: 0.8rem;
+    width: 23rem;
+    background-color: var(--white-color);
+}
+
+.catalog-2__encase {
+    padding: 0 2rem 1.2rem;
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.catalog-2__encaseItem {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-2__item {
+    padding: 0.2rem 1.2rem;
+    width: 20.6rem;
+    display: flex;
+    align-items: center;
+    color: #27272A;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.catalog-2__item:hover {
+    border-radius: 0.8rem;
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.catalog-2__item img {
+    width: 2.4rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.exhibition {
+
+}
+
+.content__slide {
+    border-radius: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    background-color: var(--white-color);
+}
+
+.content__slide img {
+    max-width: 93.4rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    display: block;
+}
+
+.exhibition__textHeading {
+    font-size: 1.5rem;
+    color: #009981;
+    text-align: center;
+    display: block;
+    transform: translateX(-30%);
+    cursor: default;
+}
+
+.exhibition__textDescription {
+    margin-top: 0.8rem;
+    font-size: 11px;
+    color: #009981;
+    font-weight: bold;
+    opacity: 0.8;
+    text-align: center;
+    transform: translateX(-30%);
+    cursor: default;
+}
+
+.content__subSlide {
+    margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__subSlideImg {
+    border-radius: 1rem;
+    width: 23.197rem;
+    overflow: hidden;
+}
+
+.content__subLongSlide {
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.content__targetSubPhone {
+    cursor: default;
+    border-radius: 1.4rem;
+    margin: 2.6rem auto 1.4rem auto;
+    padding: 0 1.5rem;
+    width: 23rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background-color: #363636;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.content__listItems {
+    max-width: 95.8rem;
+    height: 143rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content__item {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 23.2rem;
+    height: 35rem;
+    list-style-type: none;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.content__itemChild {
+    text-decoration: none;
+}
+
+.content__item:hover .content__imageItem {
+    width: 16.4rem;
+    margin: 1rem 2.4rem;
+}
+
+.content__item:hover {
+    cursor: pointer;
+}
+
+.content__imageItem {
+    margin: 1.2rem auto;
+    width: 16rem;
+    height: auto;
+}
+
+.content__nameItem {
+    height: 3.2rem;
+    margin-bottom: 0.4rem;
+    color: #18181b;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.valueItem {
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+    color: #d70018;
+    font-weight: bold;
+}
+
+.content__smemberItem {
+    border-radius: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    background-color: #dce8fd;
+    color: #1e478a;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.9
+}
+
+.studentItem {
+    border-radius: 0.4rem;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    background-color: #efe9fe;
+    color: #421d95;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.contributeItem {
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    color: #18181b;
+    background-color: #f2f2f3;
+}
+
+/* .content__targetSubLap {
+    cursor: default;
+    border-radius: 1.4rem;
+    margin: 2.6rem auto 1.4rem auto;
+    padding: 0 1.5rem;
+    width: 23rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background-color: #363636;
+    line-height: 3.2rem;
+    text-align: center;
+} */
+
+.nearEnd {
+    margin-top: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    background-color: var(--white-color);
+    height: 17rem;
+}
+
+.nearEnd__policy {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.nearEnd__policySub {
+    padding: 1.2rem;
+    list-style-type: none;
+    height: 10.9rem;
+}
+
+.nearEnd__policySub i {
+    font-size: 5rem;
+    color: #009981;
+}
+
+.nearEnd__policySub strong {
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+    color: #191919;
+    display: block;
+}
+
+.footer {
+    margin-top: 2rem;
+    padding: 4rem 4rem 4rem 4rem;
+    height: 50rem;
+    background-color: #006555;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__contactInfo {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+}
+
+.footer__textInfo {
+    list-style-type: none;
+}
+
+.footer__textInfo >h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.footer__textInfo >p {
+    margin: 0.3rem 0;
+    font-size: 1.4rem;
+}
+
+.footer__textInfo img {
+    border-radius: 0.8rem;
+    width: 19.6rem;
+}
+
+.footer__socialNetwork {
+    display: flex;
+}
+
+.footer__socialNetwork >li {
+    list-style-type: none;
+}
+
+.footer__socialNetwork i {
+    font-size: 3rem;
+}
+
+.footer__textEnd {
+
+}
+
+.footer__textEndDescription {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    font-weight: bold;
+    text-align: center;
+    bottom: 0;
+}
+
+.detailsInterface__child {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+.deviceInfo {
+    max-width: 72rem;
+}
+
+.deviceInfo__encaseInfo {
+}
+
+.deviceInfo__info {
+    list-style-type: none;
+    background-color: var(--white-color);
+}
+
+.deviceInfoImgPrivate {
+    border-radius: 1rem;
+}
+
+.deviceInfoImg {
+    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    max-width: 72rem;
+    display: block;
+}
+
+.deviceInfo__infoText {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.deviceInfo__infoText h2 {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+}
+
+.deviceInfo__infoText p {
+    border-top: 0.1rem solid #ddd;
+    font-size: 1.4rem;
+    padding: 1.6rem 1.2rem;
+    opacity: 0.6;
+}
+
+.deviceInfo__infoText i {
+    margin-right: 0.6rem;
+}
+
+.deviceInfo__tableEncase {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.deviceInfo__special {
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.deviceInfo__special i {
+    margin-right: 1rem;
+}
+
+.deviceInfo__infoTable {
+    margin-bottom: 4rem;
+    width: 72rem;
+    border-spacing: 0;
+}
+
+.deviceInfo__infoTableColor {
+    background-color: #ddd;
+    opacity: 0.6;
+}
+
+.deviceInfo__infoTable td {
+    padding: 1.2rem 1.6rem;
+    vertical-align: top; 
+    font-size: 1.4rem;
+}
+
+.deviceBuyEncase {
+    max-width: 46rem;
+}
+
+.deviceBuyEncase__img {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    display: block;
+    background-color: var(--white-color);
+}
+
+.deviceBuyEncase__child li {
+    list-style-type: none;
+}
+
+.deviceBuy__phoneName {
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #006555;
+    padding: 2.6rem 1.6rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    color: #d90016;
+}
+
+.deviceBuy__option {
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    text-align: center;
+    align-items: center;
+}
+
+.deviceBuyEncase__priceEncase {
+    padding: 0 1.4rem 1rem;
+    border-bottom: 0.1rem solid #ddd;
+}
+
+.deviceBuyEncase__price {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #d90016;
+} 
+
+.deviceBuyEncase__optionColor {
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.deviceBuyEncase__child button {
+    margin-right: 1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #ddd;
+    /* border: 0; */
+    width: 11.62rem;
+    height: 4rem;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+
+.deviceBuyEncase__child a {
+    font-size: 1.4rem;
+    padding: 1.2rem 1.4rem;
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.deviceBuyEncase__child a:hover {
+    background-color: #ddd;
+    opacity: 0.4;
+}
+
+.deviceBuyEncase__sale {
+    margin-top: 2rem;
+}
+.deviceBuy__saleHeading {
+    padding: 1.2rem 2rem;
+    height: 4.8rem;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    background-color: #49a78c;
+    overflow: hidden;
+}
+
+.deviceBuy__saleHeading i {
+    margin-right: 1rem;
+}
+
+.deviceBuyEncase__saleDescription {
+    border-radius: 1rem !important;
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.deviceBuy__saleDescription {
+    border-top: 0.1rem solid #ddd;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.introduce {
+    border-radius: 1rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 72rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.textIntroduce {
+    margin: auto 0 auto 2rem;
+}
+
+.textIntroduce__name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.textIntroduce__textDescription {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.textIntroduce__text {
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+.introduce__img {
+    width: 15rem;
+    display: block;
+    border-radius: 1rem;
+}
